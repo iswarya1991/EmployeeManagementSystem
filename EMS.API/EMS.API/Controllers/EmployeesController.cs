@@ -1,9 +1,5 @@
-﻿using EMS.API.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+﻿using EMS.Business;
+using EMS.Data;
 using System.Web.Http;
 
 namespace EMS.API.Controllers
@@ -11,69 +7,43 @@ namespace EMS.API.Controllers
     [RoutePrefix("api/Employees")]
     public class EmployeesController : ApiController
     {
-        public List<Employee> Employees;
+       private EMSLogic _EMSLogic;
         public EmployeesController()
         {
-            Employees = new List<Employee>
-            {
-                new Employee
-                {
-                Id=1,Name="iswaryak",DeptName="IT"
-                },
-                new Employee
-                {
-                    Id = 2,
-                    Name = "Indu",
-                    DeptName = "Fullstack developer"
-                }
-            };
-
+            _EMSLogic = new EMSLogic();
         }
 
         [HttpGet]
-        [Route("GetEmp")]
-        public IHttpActionResult GetEmployee()
+        [Route("")]
+        public IHttpActionResult GetEmployees()
         {
-            return Ok(Employees);
-
+            return Ok(_EMSLogic.GetEmployees());
         }
         [HttpGet]
         [Route("")]
         public IHttpActionResult GetEmployeeLastname(int id)
         {
-            return Ok("KIRANMAYEE");
+            return Ok(_EMSLogic.GetEmployeeById(id));
 
         }
         [HttpPost]
         [Route("")]
         public IHttpActionResult AddEmployee([FromBody]Employee employee)
         {
-            Employees.Add(employee);
-            return Ok(Employees);
+            return Ok(_EMSLogic.CreateEmployee(employee));
         }
         [HttpDelete]
         [Route("{id}")]
         public IHttpActionResult DeleteEmployee(int id)
         {
-            var employee = Employees.Find(x => x.Id == id);
-            if(employee != null)
-            {
-                Employees.Remove(employee);
-            }
-            return Ok(Employees);
+            return Ok(_EMSLogic.DeleteEmployee(id));
         }
 
         [HttpPut]
         [Route("{id}")]
-        public IHttpActionResult UpdateEmployee(int id, string deptName)
+        public IHttpActionResult UpdateEmployee(int id, Employee employee)
         {
-            Employee emp = Employees.Find(x => x.Id == id);
-            if(emp != null)
-            {
-                emp.DeptName = deptName;
-                return Ok(Employees);
-            }
-            return Ok("No record to update the employee");
+            return Ok(_EMSLogic.UpdateEmployee(id, employee));
         }
     }
 }

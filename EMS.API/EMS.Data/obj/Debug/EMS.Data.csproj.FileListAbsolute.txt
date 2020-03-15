@@ -1,0 +1,10 @@
+E:\traning\EMS.API\EMS.Data\bin\Debug\EMS.Data.dll.config
+E:\traning\EMS.API\EMS.Data\bin\Debug\EMS.Data.dll
+E:\traning\EMS.API\EMS.Data\bin\Debug\EMS.Data.pdb
+E:\traning\EMS.API\EMS.Data\bin\Debug\EntityFramework.dll
+E:\traning\EMS.API\EMS.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\traning\EMS.API\EMS.Data\bin\Debug\EntityFramework.xml
+E:\traning\EMS.API\EMS.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\traning\EMS.API\EMS.Data\obj\Debug\EMS.Data.csproj.CopyComplete
+E:\traning\EMS.API\EMS.Data\obj\Debug\EMS.Data.dll
+E:\traning\EMS.API\EMS.Data\obj\Debug\EMS.Data.pdb

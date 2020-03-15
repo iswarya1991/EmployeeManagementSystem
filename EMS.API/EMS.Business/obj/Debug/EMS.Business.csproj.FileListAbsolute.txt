@@ -1,0 +1,14 @@
+E:\traning\EMS.API\EMS.Business\bin\Debug\EMS.Business.dll.config
+E:\traning\EMS.API\EMS.Business\bin\Debug\EMS.Business.dll
+E:\traning\EMS.API\EMS.Business\bin\Debug\EMS.Business.pdb
+E:\traning\EMS.API\EMS.Business\bin\Debug\EMS.Data.dll
+E:\traning\EMS.API\EMS.Business\bin\Debug\EntityFramework.dll
+E:\traning\EMS.API\EMS.Business\bin\Debug\EntityFramework.SqlServer.dll
+E:\traning\EMS.API\EMS.Business\bin\Debug\EMS.Data.pdb
+E:\traning\EMS.API\EMS.Business\bin\Debug\EMS.Data.dll.config
+E:\traning\EMS.API\EMS.Business\bin\Debug\EntityFramework.xml
+E:\traning\EMS.API\EMS.Business\bin\Debug\EntityFramework.SqlServer.xml
+E:\traning\EMS.API\EMS.Business\obj\Debug\EMS.Business.csprojAssemblyReference.cache
+E:\traning\EMS.API\EMS.Business\obj\Debug\EMS.Business.csproj.CopyComplete
+E:\traning\EMS.API\EMS.Business\obj\Debug\EMS.Business.dll
+E:\traning\EMS.API\EMS.Business\obj\Debug\EMS.Business.pdb
